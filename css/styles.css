@@ -1,28 +1,37 @@
-/* Скидання глобальних стилів */
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #ffffff;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Основні стилі */
-body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-/* Хедер */
-header {
-    border-bottom: 1px solid #e7e9fc;
-}
-
+/* CONTAINER */
 .container {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+/* HEADER */
+.header {
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-inner {
@@ -34,10 +43,6 @@ header {
 .nav {
     display: flex;
     align-items: center;
-}
-.nav-menu {
-    display: flex;
-    gap: 40px;
 }
 
 .logo {
@@ -55,7 +60,7 @@ header {
     color: #2e2f42;
 }
 
-.menu {
+.nav-menu {
     display: flex;
     gap: 40px;
 }
@@ -67,11 +72,6 @@ header {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: #404bbf;
 }
 
 .contact-info {
@@ -90,29 +90,24 @@ header {
     color: #434455;
 }
 
-.contact-link:hover,
-.contact-link:focus {
-    color: #404bbf;
-}
-
-/* Перша секція (Hero Section) */
+/* HERO SECTION */
 .hero-section {
     background-color: #2e2f42;
     padding: 188px 0;
+    text-align: center;
 }
 
 .hero-title {
+    color: #ffffff;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
-    color: #ffffff;
     max-width: 496px;
-    margin: 0 auto;
+    margin: 0 auto 48px;
 }
 
 .button {
-    background-color: var(--primary-color, #4d5ae5);
+    background-color: #4d5ae5;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -128,12 +123,7 @@ header {
     margin: 0 auto;
 }
 
-.button:hover,
-.button:focus {
-    background-color: #404BBF;
-}
-
-/* Друга секція (Our Advantages) */
+/* ADVANTAGES SECTION  */
 .advantages-section {
     padding: 120px 0;
 }
@@ -162,12 +152,12 @@ header {
 }
 
 .advantages-heading {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
 }
 
 .advantages-text {
@@ -177,20 +167,20 @@ header {
     color: #434455;
 }
 
-/* Третя секція (Our Team) */
+/* TEAM SECTION  */
 .team-section {
-    background-color: #F4F4FD;
     padding: 120px 0;
+    background-color: #f4f4fd;
 }
 
 .team-title {
+    margin-bottom: 72px;
+    text-align: center;
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
     text-transform: capitalize;
+    letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 72px;
 }
 
 .team-list {
@@ -199,10 +189,10 @@ header {
 }
 
 .team-item {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: calc((100% - 72px) / 4);
     flex-basis: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0 0 4px 4px;
 }
 
 .team-card-content {
@@ -210,37 +200,36 @@ header {
 }
 
 .team-name {
+    text-align: center;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    text-align: center;
-    margin-bottom: 8px;
 }
 
 .team-role {
+    text-align: center;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    text-align: center;
 }
 
-/* Четверта секція (Our Portfolio) */
+/* PORTFOLIO SECTION  */
 .portfolio-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 .portfolio-title {
+    margin-bottom: 72px;
+    text-align: center;
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
     text-transform: capitalize;
+    letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -262,12 +251,12 @@ header {
 }
 
 .portfolio-item-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
 }
 
 .portfolio-item-text {
@@ -277,7 +266,7 @@ header {
     color: #434455;
 }
 
-/* Футер */
+/* FOOTER */
 .page-footer {
     background-color: #2e2f42;
     padding: 100px 0;
@@ -300,8 +289,8 @@ header {
 }
 
 .footer-text {
-    line-height: 1.5;
-    color: var(--footer-text-color, #F4F4FD);
-    letter-spacing: 0.02em;
+    color: #f4f4fd;
     max-width: 264px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }

@@ -1,4 +1,36 @@
 
+/* ===== Reset ===== */
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+li,
+a,
+button {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -26,7 +58,7 @@ img {
 .container {
     width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
 }
 
 /* HEADER */
@@ -127,6 +159,7 @@ img {
 .advantages-section {
     padding: 120px 0;
 }
+
 
 .visually-hidden {
     position: absolute;
